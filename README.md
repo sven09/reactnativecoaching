@@ -52,7 +52,7 @@ Bare Workflow
 Blank typescript
 
 
-## Step 03 Basics
+## Step 03 Basic-Components
 
 * View, Text, 
 * Style
@@ -60,7 +60,7 @@ Blank typescript
 * Components vs. Functional Components
 * Custom Component Tile (Title, Colors)
 
-## Step 04 More Components
+## Step 04 Complex Components
 * Flexbox
 * FlatList
 * Modal
@@ -117,7 +117,7 @@ https://medium.com/trabe/react-useref-hook-b6c9d39e2022
 
 
 
-# Step 09 GraphQL Client
+# Step 11 GraphQL Client
 * Sample: https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-native-apollo-blog
 
 # Step 09 
