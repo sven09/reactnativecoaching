@@ -100,11 +100,10 @@ https://medium.com/trabe/react-useref-hook-b6c9d39e2022
 * Create
 * Use
 
-# Step 09 Redux 
+# Step 09 Redux & Rematch
 * Introduction Redux
 * https://codesandbox.io/s/github/reduxjs/redux/tree/master/examples/todos
 
-## Step 09 Rematch
 
 * Rematch 
 
