@@ -16,7 +16,7 @@ export default function App() {
           <Text>Red</Text>
         </View>
         <View style={{ flex: 2, backgroundColor: 'blue' }} />
-        <View style={{ flex: 3, backgroundColor: 'green' }} />
+        <View style={{ flex: 10, backgroundColor: 'green' }} />
       </View>
     );
   };
@@ -86,6 +86,33 @@ export default function App() {
  */
 
   const renderFlatList = () => {
+    const _data = [
+      { key: 'Red' },
+      { key: 'Blue' },
+      { key: 'Green' },
+      { key: 'Black' },
+      { key: 'White' },
+      { key: 'Yellow' },
+      { key: 'Pink' },
+      { key: 'Cyan' },
+      { key: 'Red' },
+      { key: 'Blue' },
+      { key: 'Green' },
+      { key: 'Black' },
+      { key: 'White' },
+      { key: 'Yellow' },
+      { key: 'Pink' },
+      { key: 'Cyan' },
+      { key: 'Red' },
+      { key: 'Blue' },
+      { key: 'Green' },
+      { key: 'Black' },
+      { key: 'White' },
+      { key: 'Yellow' },
+      { key: 'Pink' },
+      { key: 'Cyan' },
+    ];
+
     return (
       <View style={{
         flex: 1,
@@ -94,32 +121,7 @@ export default function App() {
         width: '100%'
       }}>
         <FlatList
-          data={[
-            { key: 'Red' },
-            { key: 'Blue' },
-            { key: 'Green' },
-            { key: 'Black' },
-            { key: 'White' },
-            { key: 'Yellow' },
-            { key: 'Pink' },
-            { key: 'Cyan' },
-            { key: 'Red' },
-            { key: 'Blue' },
-            { key: 'Green' },
-            { key: 'Black' },
-            { key: 'White' },
-            { key: 'Yellow' },
-            { key: 'Pink' },
-            { key: 'Cyan' },
-            { key: 'Red' },
-            { key: 'Blue' },
-            { key: 'Green' },
-            { key: 'Black' },
-            { key: 'White' },
-            { key: 'Yellow' },
-            { key: 'Pink' },
-            { key: 'Cyan' },
-          ]}
+          data={_data}
           renderItem={({ item }) => <Text style={{
             padding: 10,
             fontSize: 18,
@@ -132,11 +134,11 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {renderFlexbox0()}
-      {/* {renderFlexbox1()}
+      {/* {renderFlexbox0()}
+      {renderFlexbox1()}
       {renderFlexbox2()} */}
 
-      {/* {renderFlatList()} */}
+      {renderFlatList()}
       {/* {renderModal()} */}
 
     </SafeAreaView>
