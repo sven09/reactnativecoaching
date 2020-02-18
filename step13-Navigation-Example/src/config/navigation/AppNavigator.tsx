@@ -136,9 +136,8 @@ const AppNavigator = () => {
   const isLoggedIn = useSelector((store: IRootState) => store.auth.isLoggedIn);
   return (
     <NavigationContainer>
-      <MainDrawerNavigator />
-      {/* {!isLoggedIn && <PublicStackNavigator />}
-      {isLoggedIn && <MainDrawerNavigator />} */}
+      {!isLoggedIn && <PublicStackNavigator />}
+      {isLoggedIn && <MainDrawerNavigator />}
     </NavigationContainer>
   );
 };
