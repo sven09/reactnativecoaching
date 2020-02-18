@@ -11,12 +11,6 @@ export const store = init({
 	plugins: [],
 });
 
-export interface ILoadingPlugin {
-	loading: {
-		models: RematchRootState<typeof models>;
-		effects: typeof store.dispatch;
-	};
-}
 
 export type Store = typeof store;
 export type Dispatch = typeof store.dispatch;
