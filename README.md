@@ -163,19 +163,22 @@ Keep an global app state
 # Step 11 GraphQL Client
 * Sample: https://github.com/GraphCMS/graphcms-examples/tree/master/current/react-native-apollo-blog
 
-# Step 12
+# Step 12 Expo CLI
 * IPA Creation
-* 
+* Expo Build
 
 
-## Step 13
-
+## Step 99 Typescript
 
 
 # Links
-* React Native
-* Expo
-* Can it be done in React Native
-* Brownfield Projects
+Some useful links:
+
+* React Native https://facebook.github.io/react-native/
+* Expo https://expo.io/
+* Can it be done in React Native https://github.com/wcandillon/can-it-be-done-in-react-native
+* Brownfield Projects https://github.com/callstack/react-native-brownfield
+* Expo UIKitten Typescript ReactNavigation Rematch Responsive Boilerplate https://github.com/sven09/expo-uikitten-typescript-navigation-rematch-boilerplate
+* Testing Expo with Detox https://blog.expo.io/testing-expo-apps-with-detox-and-react-native-testing-library-7fbdbb82ac87
 
 
