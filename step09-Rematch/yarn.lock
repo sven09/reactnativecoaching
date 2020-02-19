@@ -1078,6 +1078,13 @@
   dependencies:
     redux "^4.0.4"
 
+"@rematch/persist@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@rematch/persist/-/persist-1.1.6.tgz#6eba5e11cd6cac92d745a43f842866620c7a0880"
+  integrity sha512-gqrMAJrTpisU+AYVLkMjXaYECj80RKtLflguvCcAU/VmhBcJAfQZ1v/MCobIh8n2ez1y30ztA7oNbuB4/WVfzA==
+  dependencies:
+    redux-persist "^5.10.0"
+
 "@types/fbemitter@^2.0.32":
   version "2.0.32"
   resolved "https://registry.yarnpkg.com/@types/fbemitter/-/fbemitter-2.0.32.tgz#8ed204da0f54e9c8eaec31b1eec91e25132d082c"
@@ -4263,6 +4270,11 @@ readable-stream@^2.0.1, readable-stream@^2.2.2, readable-stream@~2.3.6:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
+
+redux-persist@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-5.10.0.tgz#5d8d802c5571e55924efc1c3a9b23575283be62b"
+  integrity sha512-sSJAzNq7zka3qVHKce1hbvqf0Vf5DuTVm7dr4GtsqQVOexnrvbV47RWFiPxQ8fscnyiuWyD2O92DOxPl0tGCRg==
 
 redux@^4.0.4:
   version "4.0.5"

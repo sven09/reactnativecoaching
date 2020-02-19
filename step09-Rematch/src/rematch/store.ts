@@ -3,18 +3,25 @@ import { init, RematchRootState } from '@rematch/core';
 import { useDispatch } from 'react-redux';
 
 import * as models from './models';
+import createPersistPlugin, { getPersistor } from '@rematch/persist'
+
 
 // const loading = createLoadingPlugin({});
 
+const persistPlugin = createPersistPlugin({
+	version: 2,
+})
+
+
 export const store = init({
 	models,
-	plugins: [],
+	plugins: [persistPlugin],
 });
 
 
 export type Store = typeof store;
 export type Dispatch = typeof store.dispatch;
-export type IRootState = RematchRootState<typeof models> & ILoadingPlugin;
+export type IRootState = RematchRootState<typeof models>;
 
 export const useRematchDispatch = <D extends {}, MD>(selector: (dispatch: D) => MD) => {
 	const dispatch = useDispatch<D>();

@@ -1,8 +1,10 @@
 import { IRootState } from '../store';
 
 const INITITIALSTATE = {
-  isLoggedIn: undefined,
-  userName: undefined
+  isLoggedIn: false,
+  userName: undefined,
+  anyOtherVariable: undefined,
+  people: []
 };
 export const auth = {
   state: INITITIALSTATE,
@@ -19,6 +21,12 @@ export const auth = {
         ...state,
         isLoggedIn: false,
         userName: undefined
+      };
+    },
+    setPeople(state, people) {
+      return {
+        ...state,
+      people
       };
     },
     clear(state) {
@@ -38,6 +46,20 @@ export const auth = {
       try {
         // Here comes some fancy async remote stuff
         this.logout();
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    async loadPeopleAsync(dummy, state: IRootState) {
+      try {
+        try {
+          const fetchP = await fetch("https://swapi.co/api/people/");
+          const res = await fetchP.json();
+          console.log('res in effect', res)
+          this.setPeople(res.results);
+        } catch (error) {
+          console.log('error', error);
+        }
       } catch (error) {
         console.log(error);
       }
