@@ -14,6 +14,18 @@ export default function CameraScreen() {
     })();
   }, []);
 
+  const takePictureAndCreateAlbum = async () => {
+    const { uri } = await camera.takePictureAsync();
+    const asset = await MediaLibrary.createAssetAsync(uri);
+    MediaLibrary.createAlbumAsync('Expo', asset)
+      .then(() => {
+        console.log('Album created!');
+      })
+      .catch(error => {
+        console.log('err', error);
+      });
+  }
+
   if (hasPermission === null) {
     return <View />;
   }
